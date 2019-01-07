@@ -14,6 +14,10 @@ public class VeiculoController {
 	@Autowired
 	private VeiculoRepository veiculoRepository;
 	
+	
+	
+	
+	
 	@RequestMapping(value="/cadastrarVeiculo", method=RequestMethod.GET)
 	public String form() {
 		return"veiculo/formVeiculo";
@@ -26,5 +30,9 @@ public class VeiculoController {
 		
 		return"redirect:/cadastrarVeiculo";
 	}
+	
+	
+	
+	
 
 }
